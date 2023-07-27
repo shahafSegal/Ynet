@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+}
+
+
+#cenBody{
+    width: 80vw;
+    margin-left: 10vw;
+    height: 120vh;
+    background-color: blanchedalmond;
+    
+}
+
+#headGrid{
+    display: grid;
+    grid: 10vmin/ 25vw 30vw 25vw;
+}
+
+.lHead ,.rHead{
+    display: flex;
+    height: 4vmin;
+    align-self: end;
+    align-items: center;
+    border: 2px red solid;
+    font-size: 1.5vmin;
+}
+.lHead{ 
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+.rHead{  
+    flex-direction: row-reverse;
+
+}
+
+.lHead *{
+    padding: 3px;
+}
+
+.rHead *{
+    padding: 3px;
+}
+
+#headGrid img{
+    height: 10vmin;
+    margin-left: auto;
+    margin-right: auto;
+    
+}

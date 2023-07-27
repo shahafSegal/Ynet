@@ -1,0 +1,47 @@
+.topnav {
+    position: sticky;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    height: 3vh;
+    top: 0px ;
+    background-color: #de1a1a;;
+    }
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0 0.8vw ;
+    text-decoration: none;
+    font-size: 1vw;
+    user-select: none;
+}
+
+.topnav a:hover {
+    font-weight: 900;
+}
+
+.topnav a.active {
+    font-weight: 900;
+}
+
+.topnav div{
+    display: flex;
+    height: 2vh;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    border: 1px white solid;
+    border-radius: 20%;
+}
+.topnav div *{ padding: 0.1vw;}
+
+#moreBtn {
+    font-size: 2vmin;
+    font-weight: 900;
+    transition: all 0.5s;
+} 
+#moreBtn:hover{
+    transform: rotateX(180deg);
+}
