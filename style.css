@@ -23,14 +23,11 @@ body{
     align-items: center;
     border: 2px red solid;
     font-size: 1.5vmin;
+    flex-direction: row-reverse;
 }
 .lHead{ 
-    flex-direction: row-reverse;
+    
     justify-content: space-around;
-}
-.rHead{  
-    flex-direction: row-reverse;
-
 }
 
 .lHead *{
