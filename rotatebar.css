@@ -1,0 +1,33 @@
+.rotateBg{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    grid-area: rotateBar;
+    background-color: lightgray;
+    width: 80vw;
+    height: 8vh;
+    overflow-x: hidden;
+}
+
+.rotateBg:hover *{
+    animation-play-state: paused;
+}
+
+.rotateEl{
+    color: black;
+    border-right:  1px solid grey ;
+    padding: 0.3vw;
+    width: 7.7vw;
+    height: 6vh;
+    animation: slide2R 60s  ease-out 10s infinite;
+}
+
+.rotateEl:hover{
+    font-weight: 900;
+}
+
+@keyframes slide2R {
+    from{ transform: translate(0px);}
+    to{ transform: translatex(160vw);}
+    
+}

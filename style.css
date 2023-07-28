@@ -44,3 +44,45 @@ body{
     margin-right: auto;
     
 }
+
+
+.halfGrid{
+    display: grid;
+    padding-top: 1vh;
+    text-align: right;
+    grid: auto/ 38vw 38vw;
+    grid: 
+    'rotateBar rotateBar';
+    column-gap: 3.6vw;
+    row-gap: 2vh;
+
+}
+
+.raw1, .raw1Txt{
+    width: 38vw;
+    height: 25vh;
+}
+.raw1Txt{
+    display: flex;
+    flex-direction: column;
+    
+    align-content: flex-end;
+    align-items: stretch;
+    row-gap: 1vh;
+}
+.raw1Txt div{ text-overflow: ellipsis;}
+
+
+.raw1Txt span{font-size: 1vmin;}
+
+.raw1Txt h1{
+    text-overflow: clip;
+    display: inline;
+    font-size: 3vmin;
+}
+
+.raw1Txt h3{
+    font-size: 1.5vmin;
+    display: inline;
+}
+
