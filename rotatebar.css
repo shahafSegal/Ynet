@@ -1,12 +1,14 @@
 .rotateBg{
     display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
     flex-direction: row-reverse;
     align-items: center;
     grid-area: rotateBar;
     background-color: lightgray;
-    width: 80vw;
-    height: 8vh;
+    width: 100%;
     overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .rotateBg:hover *{
@@ -15,16 +17,21 @@
 
 .rotateEl{
     color: black;
-    border-right:  1px solid grey ;
+    border-right:  1px dotted grey ;
+    display: grid;
+    grid-template-rows: 2vh 5vh;
     padding: 0.3vw;
-    width: 7.7vw;
-    height: 6vh;
+    width: 9.7vw;
+    height: 7vh;
     animation: slide2R 60s  ease-out 10s infinite;
+    text-decoration: none;
+    font-size: 1vmin;
 }
 
 .rotateEl:hover{
-    font-weight: 900;
+    font-weight: bold;
 }
+
 
 @keyframes slide2R {
     from{ transform: translate(0px);}

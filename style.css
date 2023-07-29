@@ -6,7 +6,6 @@ body{
 #cenBody{
     width: 80vw;
     margin-left: 10vw;
-    height: 120vh;
     background-color: blanchedalmond;
     
 }
@@ -46,43 +45,40 @@ body{
 }
 
 
-.halfGrid{
-    display: grid;
-    padding-top: 1vh;
-    text-align: right;
-    grid: auto/ 38vw 38vw;
-    grid: 
-    'rotateBar rotateBar';
-    column-gap: 3.6vw;
-    row-gap: 2vh;
+.raw1Txt *{overflow: hidden;}
 
-}
-
-.raw1, .raw1Txt{
-    width: 38vw;
-    height: 25vh;
-}
-.raw1Txt{
-    display: flex;
-    flex-direction: column;
-    
-    align-content: flex-end;
-    align-items: stretch;
-    row-gap: 1vh;
-}
-.raw1Txt div{ text-overflow: ellipsis;}
-
-
-.raw1Txt span{font-size: 1vmin;}
+.raw1Txt span{font-size: 1vw; color: gray;}
 
 .raw1Txt h1{
     text-overflow: clip;
     display: inline;
-    font-size: 3vmin;
+    font-size: 2.4vw;
 }
 
 .raw1Txt h3{
-    font-size: 1.5vmin;
+    font-size: 1.2vw;
     display: inline;
 }
 
+.articTeaser{
+     width: 38vw ;
+     height: 8.5vw;;
+     display: flex; 
+     flex-direction: row-reverse; 
+     text-align: right; 
+     color: white;
+}
+.articTeaser img{
+    width: 40%; 
+    height: 8.5vw;
+}
+
+
+.articTeaser article{
+    width:60% ;
+    height: 8.5vw;
+}
+
+.articTeaser h2{font-size: 1.4vw; margin-top: 0.2vw; height: 1.4vw;}
+.articTeaser h3{font-size: 1vw; height: 5vw;}
+.articTeaser p{font-size: 0.8vw; height: 1.4vw;}

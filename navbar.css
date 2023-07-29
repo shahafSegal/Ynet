@@ -4,7 +4,9 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
+    grid-area: navBar;
     align-items: center;
+    width: 100%;
     height: 3vh;
     top: 0px ;
     background-color: #de1a1a;;
@@ -17,14 +19,15 @@
     text-decoration: none;
     font-size: 1vw;
     user-select: none;
+    
 }
 
 .topnav a:hover {
-    font-weight: 900;
+    font-weight: bold;
 }
 
 .topnav a.active {
-    font-weight: 900;
+    font-weight: bold;
 }
 
 .topnav div{
@@ -39,6 +42,7 @@
 .topnav div *{ padding: 0.1vw;}
 
 #moreBtn {
+    color: white;
     font-size: 2vmin;
     font-weight: 900;
     transition: all 0.5s;
