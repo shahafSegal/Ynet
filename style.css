@@ -42,8 +42,8 @@ a , a:link , a:visited , a:hover , a:active{
 
 
 .lHead img{ 
-    height: 2.5vmin; 
-    margin-top:  calc(14px - 1.25vmin);
+    height: 2.5vw; 
+    margin-top:  calc(17px - 1.25vw);
 }
 
 .lHead i ,.rHead i{ padding: 3px 3px 0px 0px;}
