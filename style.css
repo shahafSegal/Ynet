@@ -2,42 +2,54 @@ body{
     margin: 0;
 }
 
+a , a:link , a:visited , a:hover , a:active{
+    text-decoration: none;
+    color: inherit;
+}
 
 #cenBody{
     width: 80vw;
     margin-left: 10vw;
-    background-color: blanchedalmond;
+
     
 }
 
 #headGrid{
     display: grid;
     grid: 10vmin/ 25vw 30vw 25vw;
+
 }
 
 .lHead ,.rHead{
-    display: flex;
+    display: inline-flex;
     height: 4vmin;
     align-self: end;
-    align-items: center;
-    border: 2px red solid;
-    font-size: 1.5vmin;
-    flex-direction: row-reverse;
+    align-items: start;
+    color: black;
+    font-size: 1.25vw;
+    direction: rtl;
 }
-.lHead{ 
-    
-    justify-content: space-around;
+.lHead{
+    justify-content: flex-end;
 }
 
-.lHead *{
+
+.lHead * , .rHead *{
+    color: black;
     padding: 3px;
 }
 
-.rHead *{
-    padding: 3px;
+
+
+.lHead img{ 
+    height: 2.5vmin; 
+    margin-top:  calc(14px - 1.25vmin);
 }
 
-#headGrid img{
+.lHead i ,.rHead i{ padding: 3px 3px 0px 0px;}
+
+
+.headImg{
     height: 10vmin;
     margin-left: auto;
     margin-right: auto;
@@ -63,11 +75,17 @@ body{
 .articTeaser{
      width: 38vw ;
      height: 8.5vw;;
-     display: flex; 
-     flex-direction: row-reverse; 
-     text-align: right; 
      color: white;
 }
+
+.teaserLink{
+    display: flex; 
+    flex-direction: row-reverse; 
+    text-align: right; 
+    color: white;
+
+}
+
 .articTeaser img{
     width: 40%; 
     height: 8.5vw;
@@ -80,5 +98,18 @@ body{
 }
 
 .articTeaser h2{font-size: 1.4vw; margin-top: 0.2vw; height: 1.4vw;}
-.articTeaser h3{font-size: 1vw; height: 5vw;}
+.articTeaser h3{font-size: 1vw; height: 4vw;}
 .articTeaser p{font-size: 0.8vw; height: 1.4vw;}
+
+.titleSect{ 
+    background-color: #00008c;
+    color: white;
+    width: 100%;
+    text-align: right;
+    font-size: 1.4vw;
+    padding: 0.5vw 0 0.5vw 0;
+    font-weight: bold;
+}
+.titleSect span{
+    margin-right: 0.5vw;
+}
