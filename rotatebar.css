@@ -7,8 +7,7 @@
     grid-area: rotateBar; 
     background-color: lightgray;
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: visible;
+    overflow: hidden;
 }
 
 .rotateBg:hover *{
@@ -23,9 +22,10 @@
     border-right:  1px dotted grey ;
     display: grid;
     grid-template-rows: 2vw 5vw;
-    animation: slide2R 60s  linear 5s infinite;
+    animation: slide2R 30s  linear 5s infinite;
     font-size: 1vw;
 }
+.firstEls{ animation-name: slide2R_2;}
 
 
 
@@ -35,8 +35,22 @@
 
 
 @keyframes slide2R {
-    from{ transform: translatex(0px);}
-    to{ transform: translatex(160vw);}
+    0%{ transform: translatex(0px);}
+    80%{ transform: translatex(160vw);}
+    80.1%{transform: translate( 160vw,10vw); }
+    80.2%{transform: translate( -60vw,10vw); }
+    80.3%{ transform: translate( -60vw,0);} 
+    100%{ transform: translate(0,0);}
+    
+}
+
+@keyframes slide2R_2 {
+    0%{ transform: translatex(0px);}
+    40%{ transform: translatex(80vw);}
+    40.1%{transform: translate( 160vw,10vw); }
+    40.2%{transform: translate( -100vw,10vw); }
+    60%{ transform: translate( -80vw,0);}
+    100%{ transform: translate(0,0);}
     
 }
 
