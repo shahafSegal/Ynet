@@ -22,9 +22,9 @@ a , a:link , a:visited , a:hover , a:active{
 
 .lHead ,.rHead{
     display: inline-flex;
-    height: 4vmin;
+    height: 4vw;
     align-self: end;
-    align-items: start;
+    align-items: end;
     color: black;
     font-size: 1.25vw;
     direction: rtl;
